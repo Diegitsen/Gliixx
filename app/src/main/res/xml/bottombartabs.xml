@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+
+    <tab
+        id="@+id/tabMusica"
+        icon="@drawable/icmusica"
+        inActiveColor="#10000000"
+        activeColor="#10000000"
+        />
+
+    <tab
+        id="@+id/tabLetra"
+        icon="@drawable/icletra"
+        inActiveColor="#10000000"
+        activeColor="#10000000"
+         />
+
+    <tab
+        id="@+id/tabTemp"
+        icon="@drawable/ictemp"
+        inActiveColor="#10000000"
+        activeColor="#10000000"
+        />
+
+    <tab
+        id="@+id/tabAjustes"
+        icon="@drawable/icajustes"
+        inActiveColor="#10000000"
+        activeColor="#10000000"
+        />
+
+
+
+    <tab
+        id="@+id/tabSupport"
+        icon="@drawable/icsupport"
+        inActiveColor="#10000000"
+        activeColor="#10000000"
+         />
+
+
+
+
+</tabs>

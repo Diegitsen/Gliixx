@@ -5,14 +5,13 @@ import android.content.Intent;
 import android.support.annotation.IdRes;
 import android.util.Log;
 
-import com.example.diego.glix.AjustesActivity;
-import com.example.diego.glix.LetrasActivity;
-import com.example.diego.glix.MainActivity;
+import com.example.diego.glix.Ajustes.AjustesActivity;
+import com.example.diego.glix.Letras.LetrasActivity;
+import com.example.diego.glix.Musica.MainActivity;
 import com.example.diego.glix.R;
-import com.example.diego.glix.SupportActivity;
-import com.example.diego.glix.TemporizadorActivity;
+import com.example.diego.glix.Support.SupportActivity;
+import com.example.diego.glix.Temporizador.TemporizadorActivity;
 import com.roughike.bottombar.BottomBar;
-import com.roughike.bottombar.BottomBarTab;
 import com.roughike.bottombar.OnTabSelectListener;
 
 /**

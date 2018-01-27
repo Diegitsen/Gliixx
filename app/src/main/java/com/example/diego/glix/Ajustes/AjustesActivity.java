@@ -1,22 +1,30 @@
-package com.example.diego.glix;
+package com.example.diego.glix.Ajustes;
 
 import android.content.Context;
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.annotation.IdRes;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.util.Log;
 
+import com.example.diego.glix.Letras.LetrasActivity;
+import com.example.diego.glix.Musica.MainActivity;
+import com.example.diego.glix.R;
+import com.example.diego.glix.Support.SupportActivity;
+import com.example.diego.glix.Temporizador.TemporizadorActivity;
 import com.example.diego.glix.Utils.BottomNavigationBarHelper;
 import com.roughike.bottombar.BottomBar;
 import com.roughike.bottombar.OnTabSelectListener;
 
-public class MainActivity extends AppCompatActivity {
+/**
+ * Created by diego on 24/01/18.
+ */
 
-    private static final String TAG = "MainActivity";
-     public int cont = 0;
+public class AjustesActivity extends AppCompatActivity {
 
-    Context mcontext = MainActivity.this;
+    private static final String TAG = "AjustesActivity";
+
+    Context mcontext = AjustesActivity.this;
 
 
     @Override
@@ -24,10 +32,8 @@ public class MainActivity extends AppCompatActivity {
         Log.d(TAG, "onCreate: onStarting");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
         BottomBar bottomBar = (BottomBar) findViewById(R.id.bottomBar);
-        //setUpBottomNavigationView(bottomBar);
+       // setUpBottomNavigationView(bottomBar);
         setUp(bottomBar);
 
 
@@ -37,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
     {
 
         BottomNavigationBarHelper.enableNavigation(mcontext, bottomBar);
-        cont++;
+
     }
 
     private void setUp(BottomBar bottomBar)
@@ -45,26 +51,29 @@ public class MainActivity extends AppCompatActivity {
         bottomBar.setOnTabSelectListener(new OnTabSelectListener() {
             @Override
             public void onTabSelected(@IdRes int tabId) {
-                if (tabId == R.id.tabAjustes) {
-                    Intent intentA = new Intent(MainActivity.this, AjustesActivity.class);
-                    startActivity(intentA);
+                if (tabId == R.id.tabLetra) {
+                    Intent intentL = new Intent(AjustesActivity.this, LetrasActivity.class);
+                    startActivity(intentL);
                 }
                 else if(tabId == R.id.tabTemp)
                 {
-                    Intent intentT = new Intent(MainActivity.this, TemporizadorActivity.class);
+                    Intent intentT = new Intent(AjustesActivity.this, TemporizadorActivity.class);
                     startActivity(intentT);
                 }
-                else if(tabId == R.id.tabLetra)
+                else if(tabId == R.id.tabMusica)
                 {
-                    Intent intentL = new Intent(MainActivity.this, LetrasActivity.class);
-                    startActivity(intentL);
+                    Intent intentM = new Intent(AjustesActivity.this, MainActivity.class);
+                    startActivity(intentM);
                 }
                 else if(tabId == R.id.tabSupport)
                 {
-                    Intent intentS = new Intent(MainActivity.this, SupportActivity.class);
+                    Intent intentS = new Intent(AjustesActivity.this, SupportActivity.class);
                     startActivity(intentS);
                 }
             }
         });
     }
+
+
+
 }

@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".Musica.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -17,10 +17,10 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".AjustesActivity"></activity>
-        <activity android:name=".LetrasActivity"></activity>
-        <activity android:name=".SupportActivity"></activity>
-        <activity android:name=".TemporizadorActivity"></activity>
+        <activity android:name=".Ajustes.AjustesActivity"></activity>
+        <activity android:name=".Letras.LetrasActivity"></activity>
+        <activity android:name=".Support.SupportActivity"></activity>
+        <activity android:name=".Temporizador.TemporizadorActivity"></activity>
     </application>
 
 </manifest>

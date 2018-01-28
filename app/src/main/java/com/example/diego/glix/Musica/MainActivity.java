@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.TableLayout;
+import android.widget.TextView;
 
 import com.example.diego.glix.Ajustes.AjustesActivity;
 import com.example.diego.glix.Letras.LetrasActivity;
@@ -38,6 +39,10 @@ public class MainActivity extends AppCompatActivity {
         //setUpBottomNavigationView(bottomBar);
         setUp(bottomBar);
         setUpViewPager();
+
+        //Changing name of toolbar
+        TextView tvTitle = (TextView)findViewById(R.id.toolbarTitulo);
+        tvTitle.setText(R.string.tMusica);
 
 
     }

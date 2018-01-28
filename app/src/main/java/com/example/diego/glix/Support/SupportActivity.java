@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.annotation.IdRes;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.widget.TextView;
 
 import com.example.diego.glix.Ajustes.AjustesActivity;
 import com.example.diego.glix.Letras.LetrasActivity;
@@ -36,6 +37,10 @@ public class SupportActivity extends AppCompatActivity {
         BottomBar bottomBar = (BottomBar) findViewById(R.id.bottomBar);
         //setUpBottomNavigationView(bottomBar);
        // setUp(bottomBar);
+
+        //changing name of toolbar
+        TextView tvTitle = (TextView)findViewById(R.id.toolbarTitulo);
+        tvTitle.setText(R.string.tSupport);
 
 
     }

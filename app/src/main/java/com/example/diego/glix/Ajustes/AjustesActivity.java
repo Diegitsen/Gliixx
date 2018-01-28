@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.annotation.IdRes;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.widget.TextView;
 
 import com.example.diego.glix.Letras.LetrasActivity;
 import com.example.diego.glix.Musica.MainActivity;
@@ -16,6 +17,8 @@ import com.example.diego.glix.Utils.BottomNavigationBarHelper;
 import com.roughike.bottombar.BottomBar;
 import com.roughike.bottombar.OnTabSelectListener;
 
+import org.w3c.dom.Text;
+
 /**
  * Created by diego on 24/01/18.
  */
@@ -25,6 +28,7 @@ public class AjustesActivity extends AppCompatActivity {
     private static final String TAG = "AjustesActivity";
 
     Context mcontext = AjustesActivity.this;
+    TextView tvTitle = (TextView)findViewById(R.id.toolbarTitulo);
 
 
     @Override
@@ -35,6 +39,8 @@ public class AjustesActivity extends AppCompatActivity {
         BottomBar bottomBar = (BottomBar) findViewById(R.id.bottomBar);
        // setUpBottomNavigationView(bottomBar);
         setUp(bottomBar);
+        TextView tvTitle = (TextView)findViewById(R.id.toolbarTitulo);
+        tvTitle.setText(R.string.tAjustes);
 
 
     }

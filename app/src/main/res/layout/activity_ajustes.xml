@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relAjustes1">
+
+            <include layout="@layout/layout_top_toolbar"/>
+
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/relAjustes1"
+            android:id="@+id/relAjustes2"
+            android:layout_marginBottom="60dp">
+
+            <include layout="@layout/layout_ajustes_list"/>
+
+        </RelativeLayout>
+
+        <include layout="@layout/layout_bottom_navigation_view"/>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

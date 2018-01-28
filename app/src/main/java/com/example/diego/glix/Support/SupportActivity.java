@@ -31,11 +31,11 @@ public class SupportActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         Log.d(TAG, "onCreate: onStarting");
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_support);
 
         BottomBar bottomBar = (BottomBar) findViewById(R.id.bottomBar);
         //setUpBottomNavigationView(bottomBar);
-        setUp(bottomBar);
+       // setUp(bottomBar);
 
 
     }

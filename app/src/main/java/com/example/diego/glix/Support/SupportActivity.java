@@ -35,7 +35,7 @@ public class SupportActivity extends AppCompatActivity {
         setContentView(R.layout.activity_support);
 
         BottomBar bottomBar = (BottomBar) findViewById(R.id.bottomBar);
-        //setUpBottomNavigationView(bottomBar);
+
        // setUp(bottomBar);
 
         //changing name of toolbar

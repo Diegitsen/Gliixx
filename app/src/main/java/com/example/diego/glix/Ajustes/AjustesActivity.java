@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.support.annotation.IdRes;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import com.example.diego.glix.Letras.LetrasActivity;
@@ -19,6 +21,8 @@ import com.roughike.bottombar.OnTabSelectListener;
 
 import org.w3c.dom.Text;
 
+import java.util.ArrayList;
+
 /**
  * Created by diego on 24/01/18.
  */
@@ -28,29 +32,27 @@ public class AjustesActivity extends AppCompatActivity {
     private static final String TAG = "AjustesActivity";
 
     Context mcontext = AjustesActivity.this;
-    TextView tvTitle = (TextView)findViewById(R.id.toolbarTitulo);
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         Log.d(TAG, "onCreate: onStarting");
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_ajustes);
+
+        //bottombar
         BottomBar bottomBar = (BottomBar) findViewById(R.id.bottomBar);
-       // setUpBottomNavigationView(bottomBar);
-        setUp(bottomBar);
+        //setUp(bottomBar);
+
+        //changing title
         TextView tvTitle = (TextView)findViewById(R.id.toolbarTitulo);
         tvTitle.setText(R.string.tAjustes);
 
+        //setUpListSettings
+        setUpSettingList();
 
     }
 
-    private void setUpBottomNavigationView(BottomBar bottomBar)
-    {
-
-        BottomNavigationBarHelper.enableNavigation(mcontext, bottomBar);
-
-    }
 
     private void setUp(BottomBar bottomBar)
     {
@@ -81,5 +83,19 @@ public class AjustesActivity extends AppCompatActivity {
     }
 
 
+    private void setUpSettingList()
+    {
+        Log.d(TAG, "setUpSettingList: initialazing");
+        ListView listView = (ListView)findViewById(R.id.lvSettings);
+
+        ArrayList<String> options = new ArrayList<>();
+        options.add(getString(R.string.aTema));
+        options.add(getString(R.string.aShake));
+        options.add(getString(R.string.aPausar));
+        options.add(getString(R.string.aLookScreen));
+
+        ArrayAdapter adapter = new ArrayAdapter(AjustesActivity.this, android.R.layout.simple_list_item_1, options);
+        listView.setAdapter(adapter);
+    }
 
 }

@@ -1,8 +1,17 @@
 <resources>
     <string name="app_name">Glix</string>
+
+    <!--Titulos -->
     <string name="tAjustes">ａｊｕｓｔｅｓ</string>
     <string name="tMusica">ｍｕｓｉｃａ</string>
     <string name="tTemporizador">ｔｅｍｐｏｒｉｚａｄｏｒ</string>
     <string name="tSupport">ｓｕｐｐｏｒｔ</string>
     <string name="tLetras">ｌｅｔｒａｓ</string>
+
+    <!--Ajustes -->
+    <string name="aTema">Tema Oscuro</string>
+    <string name="aShake">ShakeShuffle</string>
+    <string name="aPausar">Pausar al desconectar</string>
+    <string name="aLookScreen">LookScreen</string>
+
 </resources>

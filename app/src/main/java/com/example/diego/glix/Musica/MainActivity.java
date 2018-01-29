@@ -8,7 +8,6 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
-import android.widget.TableLayout;
 import android.widget.TextView;
 
 import com.example.diego.glix.Ajustes.AjustesActivity;
@@ -16,7 +15,7 @@ import com.example.diego.glix.Letras.LetrasActivity;
 import com.example.diego.glix.R;
 import com.example.diego.glix.Support.SupportActivity;
 import com.example.diego.glix.Temporizador.TemporizadorActivity;
-import com.example.diego.glix.Utils.BottomNavigationBarHelper;
+import com.example.diego.glix.Utils.SectionPageAdapter;
 import com.roughike.bottombar.BottomBar;
 import com.roughike.bottombar.OnTabSelectListener;
 
@@ -36,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
 
 
         BottomBar bottomBar = (BottomBar) findViewById(R.id.bottomBar);
-        //setUpBottomNavigationView(bottomBar);
         setUp(bottomBar);
         setUpViewPager();
 
@@ -47,12 +45,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private void setUpBottomNavigationView(BottomBar bottomBar)
-    {
 
-        BottomNavigationBarHelper.enableNavigation(mcontext, bottomBar);
-        cont++;
-    }
 
     private void setUp(BottomBar bottomBar)
     {

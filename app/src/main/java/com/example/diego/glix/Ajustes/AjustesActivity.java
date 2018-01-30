@@ -98,4 +98,6 @@ public class AjustesActivity extends AppCompatActivity {
         listView.setAdapter(adapter);
     }
 
+
+
 }

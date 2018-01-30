@@ -1,9 +1,11 @@
 package com.example.diego.glix.Musica;
 
+
 import android.content.Context;
 import android.content.Intent;
 import android.support.annotation.IdRes;
 import android.support.design.widget.TabLayout;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -38,6 +40,8 @@ public class MainActivity extends AppCompatActivity {
         setUp(bottomBar);
         setUpViewPager();
 
+        //init();
+
         //Changing name of toolbar
         TextView tvTitle = (TextView)findViewById(R.id.toolbarTitulo);
         tvTitle.setText(R.string.tMusica);
@@ -45,6 +49,16 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    /*private void init()
+    {
+        Log.d(TAG, "init: inflating album fragment");
+        AlbumFragment fragment = new AlbumFragment();
+        FragmentTransaction transaction = MainActivity.this.getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.containerMusica, fragment);
+        transaction.addToBackStack("Album Fragment");
+        transaction.commit();
+
+    }*/
 
 
     private void setUp(BottomBar bottomBar)

@@ -8,6 +8,8 @@
     tools:context="com.example.diego.glix.Musica.MainActivity">
 
 
+
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -34,16 +36,23 @@
         </RelativeLayout>
 
         <!-- Middle section (body) -->
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/relLayout2"
             android:layout_below="@+id/relLayout1Musica">
 
             <include layout="@layout/layout_center_viewpager"/>
+            <!--<FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/containerMusica">
+
+            </FrameLayout>-->
 
 
         </RelativeLayout>
+
 
 
         <!-- bottom navigation -->
@@ -51,6 +60,9 @@
 
 
     </RelativeLayout>
+
+
+
 
 
 </android.support.design.widget.CoordinatorLayout>

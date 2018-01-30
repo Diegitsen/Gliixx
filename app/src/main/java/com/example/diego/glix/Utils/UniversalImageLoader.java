@@ -19,9 +19,8 @@ import com.nostra13.universalimageloader.core.listener.ImageLoadingListener;
 /**
  * Created by diego on 28/01/18.
  */
+public class UniversalImageLoader {
 
-public class UniversalImageLoader
-{
     private static final int defaultImage = R.drawable.icalbum;
     private Context mContext;
 

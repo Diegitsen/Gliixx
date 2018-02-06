@@ -5,9 +5,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:launchMode="singleTop"
+    android:screenOrientation="portrait"
     tools:context="com.example.diego.glix.Musica.MainActivity">
 
-
+    <!--El launchMode auxiliará el proceso de navegación de
+    vuelta a la app luego de haberla pasado a
+     segundo plano -->
 
 
     <RelativeLayout

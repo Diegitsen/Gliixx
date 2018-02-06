@@ -16,4 +16,19 @@ public class SongInfo
         this.album = album;
     }
 
+    public String getSong() {
+        return song;
+    }
+
+    public String getArtist() {
+        return artist;
+    }
+
+    public String getSongdata() {
+        return songdata;
+    }
+
+    public String getAlbum() {
+        return album;
+    }
 }

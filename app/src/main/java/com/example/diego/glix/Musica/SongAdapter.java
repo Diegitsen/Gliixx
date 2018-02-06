@@ -18,34 +18,59 @@ import java.util.ArrayList;
  * Created by diego on 1/02/18.
  */
 
-public class SongAdapter extends BaseAdapter
-{
-    ArrayList<SongInfo> myListSong;
-    MediaPlayer mp;
+public class SongAdapter extends BaseAdapter {
 
+    private ArrayList<SongInfo> songs;
+    private LayoutInflater songInf;
 
-    public SongAdapter(ArrayList<SongInfo> myListSong, MediaPlayer md)
-    {
-        this.myListSong = myListSong;
-        this.mp = mp;
+    public SongAdapter(Context c, ArrayList<SongInfo> theSongs){
+        songs=theSongs;
+        songInf=LayoutInflater.from(c);
     }
 
     @Override
     public int getCount() {
-        return 0;
+        // TODO Auto-generated method stub
+        return songs.size();
     }
 
     @Override
-    public Object getItem(int position) {
+    public Object getItem(int arg0) {
+        // TODO Auto-generated method stub
         return null;
     }
 
     @Override
-    public long getItemId(int position) {
+    public long getItemId(int arg0) {
+        // TODO Auto-generated method stub
         return 0;
     }
 
-    public View getView(int position, View convertView, ViewGroup parent)
+    @Override
+    public View getView(int position, View convertView, ViewGroup parent) {
+        //map to song layout
+        LinearLayout songLay = (LinearLayout)songInf.inflate
+                (R.layout.layout_musica_cancion, parent, false);
+        //get title and artist views
+        TextView songView = (TextView)songLay.findViewById(R.id.tvTituloCancion);
+        TextView artistView = (TextView)songLay.findViewById(R.id.tvArtista);
+        //get song using position
+        SongInfo currSong = songs.get(position);
+        //get title and artist strings
+        songView.setText(currSong.getSong());
+        artistView.setText(currSong.getArtist());
+        //set position as tag
+        songLay.setTag(position);
+        return songLay;
+    }
+
+}
+
+
+
+/*
+
+public View getView(int position, View convertView, ViewGroup parent)
     {
 
         Context context = parent.getContext();
@@ -80,4 +105,4 @@ public class SongAdapter extends BaseAdapter
         return myView;
 
     }
-}
+ */

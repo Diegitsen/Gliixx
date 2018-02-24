@@ -1,4 +1,4 @@
-# ｇｌｉｘ
+# ｇｌｉｘ [in progress]
 An ａｅｓｔｈｅｔｉｃ music player
 
 ## Getting Started

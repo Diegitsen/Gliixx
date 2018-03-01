@@ -11,6 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e0c8e201-1c37-46b3-bfcb-850b3f81a736" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -88,8 +89,8 @@
       <file leaf-file-name="MusicService.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/diego/glix/Musica/MusicService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="77" column="9" lean-forward="false" selection-start-line="77" selection-start-column="8" selection-end-line="77" selection-end-column="9" />
+            <state relative-caret-position="285">
+              <caret line="85" column="9" lean-forward="false" selection-start-line="85" selection-start-column="9" selection-end-line="85" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#822#823#0" expanded="true" />
@@ -2274,7 +2275,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1519939442655" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1519939673738" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -2322,7 +2323,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1519939442655" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1519939673739" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -2505,7 +2506,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1519939442657" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1519939673741" />
       </method>
     </configuration>
     <list size="1">
@@ -3012,8 +3013,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/diego/glix/Musica/MusicService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="77" column="9" lean-forward="false" selection-start-line="77" selection-start-column="8" selection-end-line="77" selection-end-column="9" />
+        <state relative-caret-position="285">
+          <caret line="85" column="9" lean-forward="false" selection-start-line="85" selection-start-column="9" selection-end-line="85" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#822#823#0" expanded="true" />

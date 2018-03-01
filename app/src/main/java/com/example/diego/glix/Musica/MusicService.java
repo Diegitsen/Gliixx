@@ -80,5 +80,9 @@ public class MusicService extends Service implements
         return false;
     }
 
+    public void playSong(){
+        //play a song
+    }
+
 
 }

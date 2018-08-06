@@ -1,5 +1,5 @@
 # ｇｌｉｘ [in progress]
-An ａｅｓｔｈｅｔｉｃ music player
+An ａｅｓｔｈｅｔｉｃ music player!
 
 ## Getting Started
 
